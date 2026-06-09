@@ -22,6 +22,8 @@ uv run python src/part1/agent_hello.py
 
 Build a minimal agent with a system prompt and run a conversation from the terminal. Covers authentication, the `AIProjectClient`, versioned agent creation, and the Responses API.
 
+📖 [Read the blog post](https://github.com/pabloburnio/azure-foundry/blob/main/blog/part1/part1-your-first-agent.md)
+
 ### Part 2 — Built-in Tools: Search, Code Interpreter, and File Search
 
 Get as far as possible without writing custom code. Add web search, a Python sandbox, and document Q&A to an agent using Foundry's managed tools.

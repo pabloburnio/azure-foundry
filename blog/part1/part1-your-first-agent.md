@@ -101,7 +101,7 @@ Using your credentials and your url (endpoint), you can create a project client 
 
 You can find your Project Endpoint in the Foundry portal. You'll need to navigate to your Foundry instance and then to it's own portal. I've got the new UI enabled, so it may look slightly different to what you remember. You can also find your API Key here if you need it. It should look a little something like this;
 
-![Foundry project overview](foundry_project_url.jpg)
+![Foundry project overview](https://raw.githubusercontent.com/pabloburnio/azure-foundry/main/blog/part1/foundry_project_url.jpg)
 
 Once you have a AIProjectClient, you can use this to create Agents within Foundry and talk to them. To create an agent you simply call `project.agents.create_version` and provide the agent name and definition, which includes the model it will use and the system prompt.
 
@@ -193,14 +193,14 @@ The important part is understanding what's happening under the hood. When you ca
 
 From there, the Agent Runtime takes over and loads the agent's definition, pulls the conversation history for the current thread and builds the context before sending it to the model. What comes back is the response.output_text.
 
-![azure foundry request flow](azure-foundry-agent-service-flow.jpg)
+![azure foundry request flow](https://raw.githubusercontent.com/pabloburnio/azure-foundry/main/blog/part1/azure-foundry-agent-service-flow.jpg)
 
 Foundry itself provides tracing for every model call and tool invocation. Simply browse to your specific agent in the portal and select the **Traces** tab. You can check out [Agent tracing docs](https://learn.microsoft.com/en-us/azure/foundry/foundry-classic/how-to/develop/trace-application) for more info.
 
 This is what the flow you've just ran should look like. It provides a fairly basic trace as we're not doing anything complex, but the information gives good insights into the call duration, what the query was, where the time was spent, along with token use and cost - information you'll want to keep track of as you evalute your solutions.
 
-![agent trace table](agent-trace-table.jpg)
-![detailed agent trace](agent-trace-detailed.jpg)
+![agent trace table](https://raw.githubusercontent.com/pabloburnio/azure-foundry/main/blog/part1/agent-trace-table.jpg)
+![detailed agent trace](https://raw.githubusercontent.com/pabloburnio/azure-foundry/main/blog/part1/agent-trace-detailed.jpg)
 
 ## Tidy up
 
