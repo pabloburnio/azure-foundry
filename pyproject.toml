@@ -11,7 +11,11 @@ dependencies = [
     "azure-ai-projects>=2.0.0",
     "azure-identity",
     "openai",
+    "python-dotenv",
 ]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src"]
 
 [project.optional-dependencies]
 dev = [
